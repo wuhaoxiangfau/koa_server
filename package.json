@@ -1,0 +1,27 @@
+{
+  "name": "koa_app",
+  "version": "1.0.0",
+  "description": "a koa server application",
+  "main": "src/server.js",
+  "dependencies": {
+    "@types/ibm_db": "^2.0.5",
+    "@types/koa": "^2.0.48",
+    "@types/koa-bodyparser": "^4.2.1",
+    "@types/koa-static": "^4.0.0",
+    "@types/node": "^10.12.18",
+    "ibm_db": "^2.5.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-log4": "^2.3.2",
+    "koa-static": "^5.0.0",
+    "log4js": "^3.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "start": "node build/build.js && node dist/server.js"
+  },
+  "author": "whx",
+  "license": "MIT"
+}

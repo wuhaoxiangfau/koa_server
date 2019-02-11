@@ -1,0 +1,40 @@
+{
+    "level": "info",
+    "appenders": {
+        "console": {
+            "type": "console"
+        },
+        "out": {
+            "type": "stdout"
+        },
+        "app": {
+            "type": "dateFile",
+            "filename": "logs/app.log",
+            "pattern": "-yyyy-MM-dd",
+            "encoding" : "utf-8",
+            "alwaysIncludePattern": true
+        },
+        "errors": {
+            "type": "dateFile",
+            "filename": "logs/errors.log",
+            "pattern": "-yyyy-MM-dd",
+            "encoding" : "utf-8",
+            "alwaysIncludePattern": true
+        }
+    },
+    "categories": {
+        "default": {
+          "appenders": [
+            "console",
+            "app"
+          ],
+          "level": "all"
+        },
+        "errors": {
+          "appenders": [
+            "errors"
+          ],
+          "level": "error"
+        }
+    }
+}
